@@ -3,21 +3,31 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
-    "build-dev": "webpack",
-    "build-prod": "webpack --node-env=production",
-    "clear": "rd /s /q dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dantex06/YourTour.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dantex06/YourTour/issues"
+  },
+  "homepage": "https://github.com/Dantex06/YourTour#readme",
   "description": "",
   "devDependencies": {
-    "html-loader": "^5.1.0",
-    "html-webpack-plugin": "^5.6.3",
-    "webpack": "^5.99.7",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-notify": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "1.77.6"
   }
 }
