@@ -10,7 +10,6 @@ const notify = require('gulp-notify');
 const fs = require('fs');
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
-const imageMin = require('gulp-imagemin')
 
 
 const htmlIncludeSettings = {
@@ -65,8 +64,7 @@ gulp.task('js', function(){
 })
 
 gulp.task('images', function() {
-    return gulp.src('./src/assets/images/**/*')
-        .pipe(imageMin({verbose: true}))
+    return gulp.src('./src/assets/images/**/*', { encoding: false })
         .pipe(gulp.dest('./dist/assets/images/'));
 })
 

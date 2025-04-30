@@ -1,0 +1,46 @@
+.hero {
+  height: 831px;
+
+  background-image: url('../../assets/images/header/header-img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &_info {
+    max-width: 768px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    margin: 0 auto;
+    padding: 207px 0 119px;
+
+  }
+
+  &_title {
+    color: white;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 105px;
+    letter-spacing: 1.8px;
+
+    text-align: center;
+  }
+
+  &_description {
+    max-width: 562px;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: white;
+
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

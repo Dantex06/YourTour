@@ -1,2 +1,36 @@
 .header {
+  height: 88px;
+  width: 100%;
+
+  position: absolute;
+
+  &__info {
+    height: 100%;
+    max-width: 1168px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__nav-link {
+    font-size: 20px;
+    letter-spacing: -0.1px;
+
+    color: white;
+  }
+
+  &__phone {
+    font-size: 20px;
+
+    color: white;
+  }
+
 }

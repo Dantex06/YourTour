@@ -1,0 +1,25 @@
+.tab {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  margin-top: 37px;
+
+  &_item {
+    font-size: 23px;
+    letter-spacing: 0.2px;
+
+    padding-bottom: 4px;
+  }
+
+  &_item:hover {
+    border-bottom: 2px solid black;
+  }
+
+  &_item:active {
+    color: var(--orange-200);
+
+    border-bottom: 2px solid var(--orange-200);
+  }
+}
+

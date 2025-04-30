@@ -9,23 +9,22 @@
 </head>
 <body>
 
-<!--  @@include('blocks/header/header.html')-->
-<!--  @@include('blocks/footer/footer.html')-->
   <header class="header">
-    <img src = "assets/icons/logo.svg" alt="Logo"/>
 
-    <ul class="header__nav">
-      <li class="header__nav__item">Туры</li>
-      <li class="header__nav__item">Создать тур</li>
-      <li class="header__nav__item">Отзывы</li>
-      <li class="header__nav__item">История</li>
-    </ul>
+    @@include('blocks/header/header.html')
 
-    <p class="header__phone">
-      +7 999 999 99 99
-    </p>
   </header>
-  <main></main>
+
+<!--  @@include('blocks/footer/footer.html')-->
+
+  <main>
+
+    @@include('sections/hero/hero.html')
+
+    @@include('sections/chose-tour/chose-tour.html')
+
+  </main>
+
   <footer></footer>
 
 <script src="./js/index.bundle.js"></script>
