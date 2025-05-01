@@ -1,0 +1,28 @@
+.button_link {
+  height: 42px;
+  width: 199px;
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 50px;
+  padding: 7px 20px;
+
+  &_item {
+    font-size: 23px;
+    font-weight: 700;
+    color: inherit;
+  }
+
+  &:hover {
+    background: var(--green-400);
+  }
+
+  &:active {
+    background: var(--orange-200);
+  }
+}
