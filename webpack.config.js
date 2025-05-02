@@ -1,7 +1,8 @@
 const config = {
     mode: 'production',
     entry: {
-        index: './src/index.js',
+        index: './src/js/index.js',
+        form: './src/js/form.js'
     },
     output: {
         filename: '[name].bundle.js',

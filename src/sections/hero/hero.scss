@@ -20,7 +20,7 @@
   }
 
   &_title {
-    color: white;
+    color: var(--white);
     font-size: 96px;
     font-weight: 700;
     line-height: 105px;
@@ -34,7 +34,7 @@
     font-size: 20px;
     line-height: 28px;
 
-    color: white;
+    color: var(--white);
 
     text-align: center;
     margin: 0 auto;

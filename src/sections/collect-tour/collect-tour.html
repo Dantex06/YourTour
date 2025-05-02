@@ -1,0 +1,92 @@
+<div class="collect-tour">
+
+    <div class="collect-tour_info">
+        <h2 class="collect-tour_info_title">Собери свой тур</h2>
+        <p class="collect-tour_info_description">
+            Идейные соображения высшего порядка, а также рамки и место обучения кадров
+        </p>
+    </div>
+
+    <form class="collect-tour_form">
+        <div class="collect-tour_form_inputs">
+            <div class="collect-tour_form_inputs_item">
+                <p class="collect-tour_form_inputs_item_title">Имя</p>
+                <input type="text" name="name" class="input" placeholder="Введите Ваше имя">
+            </div>
+            <div class="dropdown">
+                <p class="dropdown_title">Направление</p>
+                <div class="dropdown__container">
+
+                    <input type="text" name="location" class="dropdown__input" placeholder="Выберите направление">
+                    <button class="dropdown__button" type="button">
+                        <img src="../../assets/icons/dropdown.svg" class="dropdown__icon">
+                    </button>
+                    <div class="dropdown__menu">
+                        <p class="dropdown__item">Север</p>
+                        <p class="dropdown__item">Юг</p>
+                        <p class="dropdown__item">Запад</p>
+                        <p class="dropdown__item">Восток</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collect-tour_form_inputs_item">
+                <p class="collect-tour_form_inputs_item_title">Email</p>
+                <input type="email" name="email" class="input" placeholder="example@mail.com">
+            </div>
+            <div class="collect-tour_form_inputs_item">
+                <p class="collect-tour_form_inputs_item_title">Телефон</p>
+                <input type="tel" name="phone" class="input" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="collect-tour_form_inputs_item">
+                <p class="collect-tour_form_inputs_item_title">Дата от</p>
+                <input type="text" name="date from" class="input" placeholder="ДД.ММ.ГГГГ" onfocus="this.type='date'" onblur="this.type='text'">
+            </div>
+            <div class="collect-tour_form_inputs_item">
+                <p class="collect-tour_form_inputs_item_title">Дата до</p>
+                <input type="text" name="date to" class="input" placeholder="ДД.ММ.ГГГГ" onfocus="this.type='date'" onblur="this.type='text'">
+            </div>
+            <div class="collect-tour_form_inputs_item">
+                <p class="collect-tour_form_inputs_item_title">Комментарий</p>
+                <input type="text" name="comment" class="input collect-tour_form_inputs_item_input">
+            </div>
+        </div>
+        <div class="collect-tour_form_age">
+            <p class="collect-tour_form_age_title">Вам есть 18 лет?</p>
+            <div class="collect-tour_form_age_radios">
+                <div class="collect-tour_form_age_radios_item">
+                    <label class="radio-btn">
+                        <input type="radio" name="age">
+                        <span class="radio-btn_checkmark"></span>
+                    </label><p class="radio-btn_select">Да</p>
+                </div>
+
+                <div class="collect-tour_form_age_radios_item">
+                    <label class="radio-btn">
+                        <input type="radio" name="age">
+                        <span class="radio-btn_checkmark"></span>
+                    </label><p class="radio-btn_select">Нет</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="collect-tour_form_license">
+            <label class="checkbox">
+                <input type="checkbox" name="license" class="checkbox_input" >
+                <span class="checkbox_mark"></span>
+            </label>
+            <p class="collect-tour_form_license_text">
+                Нажимая кнопку, я принимаю условия
+                <span>Лицензионного договора</span>
+            </p>
+        </div>
+
+        <div class="collect-tour_form_buttons">
+            <button class="button_tour">Найти тур</button>
+            <button class="button_reset">Сбросить</button>
+        </div>
+
+    </form>
+
+    <script src="../../js/form.bundle.js"></script>
+
+</div>
