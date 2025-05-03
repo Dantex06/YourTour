@@ -95,13 +95,13 @@
         transform: scale(1.1);
       }
 
-      .button_link {
+      .button_detailed {
         background: var(--green-400);
       }
     }
 
     &:active {
-      .button_link {
+      .button_detailed {
         background: var(--orange-200);
       }
     }

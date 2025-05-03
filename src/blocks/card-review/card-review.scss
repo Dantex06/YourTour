@@ -1,0 +1,63 @@
+.card-review {
+  height: 673px;
+  max-width: 570px;
+  border-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: var(--beige-200);
+
+  padding: 40px;
+
+  &_info {
+    max-width: 490px;
+
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.04px;
+
+    color: var(--black-default);
+  }
+
+  &_writer {
+    height: 145px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      &_name-author {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 51px;
+
+        color: var(--black-default);
+      }
+
+      &_title {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+
+        color: var(--gray-300);
+      }
+    }
+
+    &_avatar img {
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+    }
+
+
+  }
+}
