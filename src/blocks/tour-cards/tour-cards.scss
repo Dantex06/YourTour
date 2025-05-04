@@ -25,15 +25,12 @@
       content: '';
       height: 100%;
       width: 100%;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 
       position: absolute;
       top: 0;
       left: 0;
       z-index: 2;
-
-      background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
-      opacity: 0;
-      transition: opacity 300ms ease;
     }
 
     &_background {
@@ -106,4 +103,19 @@
       }
     }
   }
+}
+
+@media (max-width: 1024px) {
+  .tour-cards {
+    gap: 18px;
+
+    &_card {
+      width: 450px;
+
+      &_content {
+        width: 100%;
+      }
+    }
+  }
+
 }

@@ -1,0 +1,60 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  padding-bottom: 135px;
+
+  &_image {
+    width: 370px;
+    height: 370px;
+    background-image: url('../../assets/images/cta/cta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+  }
+
+  &_info {
+    max-width: 371px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &_title {
+      font-size: 35px;
+      font-weight: 500;
+      line-height: 44px;
+      color: var(--black)
+    }
+
+    &_description {
+      font-size: 20px;
+      line-height: 25px;
+
+      color: var(--gray-300);
+
+      & a {
+        font-size: 20px;
+
+        color: var(--black);
+      }
+
+      & a:hover {
+        border-bottom: 1px solid var(--black);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    &_info {
+      &_title {
+
+      }
+    }
+  }
+}

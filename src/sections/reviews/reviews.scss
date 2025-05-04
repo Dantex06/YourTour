@@ -42,3 +42,13 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+  .reviews {
+
+    &_cards {
+      width: 912px;
+      gap: 18px;
+    }
+  }
+}

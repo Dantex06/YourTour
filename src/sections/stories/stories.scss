@@ -36,8 +36,23 @@
   }
 
   &_cards {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stories {
+    row-gap: 98px;
+
+    &_info {
+      &_description {
+        line-height: 31px;
+      }
+    }
   }
 }

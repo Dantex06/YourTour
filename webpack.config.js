@@ -2,6 +2,7 @@ const config = {
     mode: 'production',
     entry: {
         index: './src/js/index.js',
+        header: './src/js/header.js',
         form: './src/js/form.js'
     },
     output: {

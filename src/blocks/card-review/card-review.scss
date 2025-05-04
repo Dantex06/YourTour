@@ -17,7 +17,7 @@
     font-size: 23px;
     font-weight: 700;
     letter-spacing: -0.04px;
-
+    line-height: 28px;
     color: var(--black-default);
   }
 
@@ -58,6 +58,29 @@
       border-radius: 50%;
     }
 
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-review {
+    height: 839px;
+
+    &_info {
+      max-width: 367px;
+      letter-spacing: -0.03px;
+
+
+    }
+
+    &_writer {
+
+      &_info {
+
+        &_name-author {
+          line-height: 45px;
+        }
+      }
+    }
 
   }
 }

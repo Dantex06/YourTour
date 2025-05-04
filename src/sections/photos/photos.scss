@@ -50,3 +50,35 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .photos {
+
+    gap: 104px;
+
+    &_images {
+      gap: 30px 20px;
+
+      &_item {
+        height: 300px;
+        width: 314px;
+        object-fit: cover;
+      }
+      &_item:nth-child(2) {
+        display: none;
+      }
+      &_item:nth-child(7) {
+        display: none;
+      }
+      &_item:nth-child(13) {
+        display: none;
+      }
+
+      &_item-small {
+        height: 301px;
+        width: 231px;
+      }
+    }
+  }
+
+}

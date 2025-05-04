@@ -44,3 +44,21 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    background-image: url('../../assets/images/header/header-img-1024.png');
+
+    &_description {
+      max-width: 410px;
+    }
+  }
+
+
+}
+
+@media (max-width: 360px) {
+  .hero {
+    background-image: url('../../assets/images/header/header-img-360.png');
+  }
+}

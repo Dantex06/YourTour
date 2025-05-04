@@ -4,7 +4,9 @@
 
   position: absolute;
 
-  &__info {
+  z-index: 3;
+
+  &_info {
     height: 100%;
     max-width: 1168px;
 
@@ -15,22 +17,35 @@
     margin: 0 auto;
   }
 
-  &__nav-list {
+  &_nav-list {
     display: flex;
     gap: 50px;
   }
 
-  &__nav-link {
+  &_nav-link {
     font-size: 20px;
     letter-spacing: -0.1px;
 
     color: var(--white);
   }
 
-  &__phone {
+  &_phone {
     font-size: 20px;
 
     color: var(--white);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+
+    &_info {
+      padding: 0 57px;
+    }
+
+    &_nav-list {
+      gap: 30px;
+    }
   }
 
 }

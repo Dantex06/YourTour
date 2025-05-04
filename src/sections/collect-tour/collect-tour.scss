@@ -26,7 +26,8 @@
   }
 
   &_form {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     background: var(--white);
     border-radius: 50px;
     padding: 70px;
@@ -103,6 +104,25 @@
     &_buttons {
       display: flex;
       gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .collect-tour {
+
+    &_form {
+      max-width: 918px;
+
+      padding: 60px;
+
+      &_inputs {
+        gap: 33px 20px;
+      }
+
+      &_license {
+        gap: 11px;
+      }
     }
   }
 }
