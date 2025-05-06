@@ -1,6 +1,6 @@
 .dropdown {
   position: relative;
-  height: 68px;
+  height: 105px;
   max-width: 500px;
 
   display: flex;
@@ -112,4 +112,55 @@
       transform: rotate(180deg);
     }
   }
+}
+
+@media (max-width: 740px) {
+
+  .dropdown {
+
+    &_title {
+      font-size: 16px;
+    }
+
+    &__input {
+      width: 70%;
+    }
+    &_button {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .dropdown {
+    height: 79px;
+    row-gap: 8px;
+
+    &__container {
+      height: 46px;
+    }
+
+    &__input {
+      width: 84%;
+
+      font-size: 16px;
+
+      padding: 10px;
+    }
+
+    &__button {
+      width: 16%;
+    }
+
+    &__icon {
+      height: 26px;
+      width: 26px;
+
+    }
+
+    &_title {
+      line-height: 24px;
+    }
+  }
+  
 }

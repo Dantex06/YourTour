@@ -49,11 +49,54 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 740px) {
   .cta {
+    flex-direction: column;
+    row-gap: 30px;
+
+    &_info {
+
+      &_title {
+        text-align: center;
+      }
+
+      &_description {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .cta {
+    padding-bottom: 76px;
+
+    &_image {
+      width: 130px;
+      height: 133px;
+
+      border-radius: 20px;
+    }
+
     &_info {
       &_title {
+        max-width: 291px;
 
+        font-size: 23px;
+        line-height: 29px;
+        letter-spacing: 0.8px;
+        margin: 0 auto;
+      }
+
+      &_description {
+        max-width: 300px;
+
+        font-size: 16px;
+        line-height: 22px;
+
+        & a {
+          font-size: 16px;
+        }
       }
     }
   }

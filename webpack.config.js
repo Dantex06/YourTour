@@ -3,7 +3,7 @@ const config = {
     entry: {
         index: './src/js/index.js',
         header: './src/js/header.js',
-        form: './src/js/form.js'
+        form: './src/js/form.js',
     },
     output: {
         filename: '[name].bundle.js',

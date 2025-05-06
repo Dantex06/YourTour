@@ -6,6 +6,10 @@
 
   z-index: 3;
 
+  &_logo-mobile {
+    display: none;
+  }
+
   &_info {
     height: 100%;
     max-width: 1168px;
@@ -48,4 +52,29 @@
     }
   }
 
+}
+
+@media (max-width: 880px) {
+  .header {
+    &_nav-list {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    &_info {
+      padding: 33px 20px;
+    }
+    &_logo-mobile {
+      display: block;
+    }
+    &_logo {
+      display: none;
+    }
+    &_phone {
+      font-size: 16px;
+    }
+  }
 }

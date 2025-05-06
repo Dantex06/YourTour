@@ -9,3 +9,9 @@
   flex-direction: column;
   row-gap: 135px;
 }
+
+@media (max-width: 550px) {
+  .sections {
+    row-gap: 75px;
+  }
+}

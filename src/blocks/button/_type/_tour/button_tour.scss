@@ -20,3 +20,12 @@
     background: var(--green-200);
   }
 }
+
+@media (max-width: 550px) {
+  .button_tour {
+    height: 47px;
+    width: 134px;
+
+    font-size: 16px;
+  }
+}

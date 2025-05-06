@@ -28,3 +28,14 @@
 .radio-btn input[type="radio"]:checked + .radio-btn_checkmark {
   display: inline-block;
 }
+
+@media (max-width: 550px) {
+  .radio-btn {
+    width: 20px;
+    height: 20px;
+
+    &_select {
+      font-size: 16px;
+    }
+  }
+}

@@ -27,3 +27,11 @@
     background: var(--orange-200);
   }
 }
+
+@media (max-width: 550px) {
+  .button_detailed {
+    &_item {
+      font-size: 16px;
+    }
+  }
+}

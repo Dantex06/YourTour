@@ -10,6 +10,10 @@ window.addEventListener("scroll", () => {
         ? '../../assets/icons/logo-dark.svg'
         : '../../assets/icons/logo.svg';
 
+    document.querySelector('.header_logo-mobile').src = isScrolled
+        ? '../../assets/icons/logo-mobile-dark.svg'
+        : '../../assets/icons/logo-mobile.svg';
+
     document.querySelectorAll('.header_nav-link, .header_phone').forEach(el => {
         el.style.color = isScrolled ? 'var(--black)' : 'var(--white)';
     });

@@ -18,3 +18,12 @@
     background: var(--gray-200);
   }
 }
+
+@media (max-width: 550px) {
+  .button_reset {
+    height: 47px;
+    width: 134px;
+
+    font-size: 16px;
+  }
+}

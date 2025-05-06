@@ -37,3 +37,19 @@
     outline: none;
   }
 }
+
+@media (max-width: 740px) {
+  .input-mobile {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .input-mobile {
+    height: 43px;
+
+    font-size: 16px;
+
+    padding: 10px;
+  }
+}

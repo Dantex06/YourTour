@@ -6,6 +6,8 @@
   row-gap: 96px;
 
   &_info {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,6 +55,38 @@
       &_description {
         line-height: 31px;
       }
+    }
+
+    &_cards {
+      padding: 0 21px;
+    }
+  }
+}
+
+
+@media (max-width: 550px) {
+  .stories {
+    row-gap: 50px;
+    &_info {
+      row-gap: 20px;
+      &_title {
+        width: 100%;
+
+        font-size: 34px;
+        line-height: 38px;
+        letter-spacing: 0.4px;
+      }
+      &_description {
+        max-width: 319px;
+
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &_cards {
+      row-gap: 20px;
+
     }
   }
 }

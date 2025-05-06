@@ -1,5 +1,6 @@
 .tab {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 
@@ -23,3 +24,16 @@
   }
 }
 
+
+@media (max-width: 550px) {
+  .tab {
+    gap: 10px;
+
+    margin-top: 29px;
+    padding: 0 20px;
+    &_item {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

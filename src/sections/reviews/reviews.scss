@@ -47,8 +47,42 @@
   .reviews {
 
     &_cards {
-      width: 912px;
+      max-width: 912px;
       gap: 18px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .reviews {
+    &_cards {
+      flex-direction: column;
+      row-gap: 18px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .reviews {
+    row-gap: 50px;
+    &_cards {
+      padding: 0 21px;
+    }
+    &_info {
+      row-gap: 20px;
+      &_title {
+        width: 100%;
+
+        font-size: 34px;
+        line-height: 38px;
+        letter-spacing: 0.6px;
+      }
+      &_description {
+        max-width: 318px;
+
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
 }

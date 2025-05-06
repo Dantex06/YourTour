@@ -51,3 +51,48 @@
     padding: 30px 53px;
   }
 }
+
+@media (max-width: 760px) {
+  .footer {
+    height: 95px;
+
+    padding: 21px 21.5px;
+
+    &_info {
+      flex-direction: column;
+      row-gap: 7px;
+
+      &_title {
+        font-size: 16px;
+      }
+
+      &_links {
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    &_info {
+      row-gap: 12px;
+      &_links {
+
+        &_item {
+          gap: 6px
+        }
+
+        &_item a {
+          font-size: 16px;
+        }
+
+        &_item img {
+          height: 21px;
+          width: 21px;
+        }
+      }
+    }
+  }
+
+}

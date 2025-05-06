@@ -43,6 +43,18 @@
       opacity: 0;
     }
   }
+}
 
+@media (max-width: 550px) {
+  .checkbox {
+    &_mark {
+      height: 20px;
+      width: 20px;
+    }
 
+    ::before {
+      top: 1px;
+      left: 4px;
+    }
+  }
 }

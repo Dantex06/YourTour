@@ -76,6 +76,8 @@
       }
 
       &_description {
+        max-width: 554px;
+
         font-size: 20px;
         line-height: 28px;
       }
@@ -170,6 +172,71 @@
     }
     &_background {
       object-fit: scale-down;
+    }
+  }
+}
+
+@media (max-width: 985px) {
+  .story-cards {
+    &_card {
+
+
+      &_info {
+        max-width: 100%;
+      }
+
+      &_content {
+        padding: 30px;
+      }
+
+      &_buttons {
+        &_media {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .story-cards {
+    &_card {
+      height: 455px;
+      border-radius: 20px;
+      &_info {
+        row-gap: 20px;
+        &_title {
+          max-width: 150px;
+
+          font-size: 23px;
+          letter-spacing: 0.8px;
+        }
+        &_description {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        &_list {
+          gap: 6px;
+          &_item {
+            font-size: 16px;
+            letter-spacing: 0.2px;
+
+            padding-left: 24px;
+
+            &::before {
+              height: 2px;
+              width: 2px;
+            }
+          }
+        }
+      }
+
+      &_buttons {
+        &_link {
+          left: 10px;
+          bottom: 20px;
+        }
+      }
     }
   }
 

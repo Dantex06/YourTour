@@ -18,3 +18,17 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .chose-tour {
+    &_info {
+      row-gap: 50px;
+      &_head {
+        &_title {
+          font-size: 34px;
+          letter-spacing: 0.7px;
+        }
+      }
+    }
+  }
+}

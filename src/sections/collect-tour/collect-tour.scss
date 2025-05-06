@@ -6,6 +6,7 @@
 
   &_info {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
@@ -75,7 +76,6 @@
 
       &_radios {
         display: flex;
-
         gap: 31px;
 
         &_item {
@@ -122,6 +122,87 @@
 
       &_license {
         gap: 11px;
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .collect-tour {
+    padding: 0 21px;
+
+    &_form {
+      padding: 20px 20px 40px 20px;
+
+      &_inputs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30.5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .collect-tour {
+    row-gap: 40px;
+
+    &_form {
+      border-radius: 30px;
+      row-gap: 32.5px;
+
+      &_inputs {
+        &_item {
+          row-gap: 8px;
+          &_input {
+            height: 132px;
+          }
+          &_title {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      &_license {
+        align-items: flex-start;
+        &_text {
+          line-height: 23px;
+          letter-spacing: -0.6px;
+        }
+      }
+
+      &_buttons {
+        gap: 0;
+        justify-content: space-between;
+
+      }
+
+      &_age {
+        row-gap: 8px;
+        &_radios {
+          gap: 30px;
+
+        }
+        &_title {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &_info {
+
+      row-gap: 20px;
+      &_title {
+        height: 100%;
+        font-size: 34px;
+        letter-spacing: 0.7px;
+
+      }
+      &_description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 22px;
       }
     }
   }
