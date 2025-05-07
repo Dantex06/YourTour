@@ -1,0 +1,12 @@
+.button_email {
+  font-size: 20px;
+  color: var(--black);
+}
+.button_email:hover {
+  border-bottom: 1px solid var(--black);
+}
+.button_email:active {
+  color: var(--green-400);
+  border-bottom: 1px solid var(--green-400);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9idXR0b24vX3R5cGUvX2VtYWlsL2J1dHRvbl9lbWFpbC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFFQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFFQSIsInNvdXJjZXNDb250ZW50IjpbIi5idXR0b25fZW1haWwge1xyXG4gIGZvbnQtc2l6ZTogMjBweDtcclxuXHJcbiAgY29sb3I6IHZhcigtLWJsYWNrKTtcclxuXHJcbiAgJjpob3ZlciB7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgdmFyKC0tYmxhY2spO1xyXG4gIH1cclxuXHJcbiAgJjphY3RpdmUge1xyXG4gICAgY29sb3I6IHZhcigtLWdyZWVuLTQwMCk7XHJcblxyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHZhcigtLWdyZWVuLTQwMCk7XHJcbiAgfVxyXG59XHJcblxyXG4iXSwiZmlsZSI6ImJsb2Nrcy9idXR0b24vX3R5cGUvX2VtYWlsL2J1dHRvbl9lbWFpbC5jc3MifQ== */
