@@ -35,16 +35,6 @@
       line-height: 25px;
 
       color: var(--gray-300);
-
-      & a {
-        font-size: 20px;
-
-        color: var(--black);
-      }
-
-      & a:hover {
-        border-bottom: 1px solid var(--black);
-      }
     }
   }
 }

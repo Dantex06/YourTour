@@ -96,8 +96,17 @@
         color: var(--gray-300);
       }
 
-      &_text span {
+      &_link {
         color: var(--black);
+        letter-spacing: 0.2px;
+        &:hover {
+          border-bottom: 1px solid var(--black);
+        }
+        &:active {
+          color: var(--green-400);
+
+          border-bottom: 1px solid var(--green-400);
+        }
       }
     }
 
