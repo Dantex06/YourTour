@@ -48,19 +48,16 @@ gulp.task('html', function() {
 
 gulp.task('scss', function() {
     return gulp.src([
-        './src/assets/styles/reset.scss',
-        './src/assets/styles/variables.scss',
-        './src/**/*.scss' // Все остальные SCSS-файлы
+        './src/**/*.scss'
     ], { base: './src' })
         .pipe(plumber(plumberSettings('SCSS')))
         .pipe(sourceMaps.init())
         .pipe(sassGlob())
         .pipe(sass())
-        .pipe(concat('main.css')) // Объединяем в один файл
-        // Обработка путей
+        .pipe(concat('main.css'))
         .pipe(replace(/url\(['"]?(\.\.\/)+assets\/([^'"]+)['"]?\)/g, 'url("$2")'))
-        .pipe(sourceMaps.write('.')) // Создаем .map файл
-        .pipe(gulp.dest('./docs/assets/')); // Кладем в папку с ассетами
+        .pipe(sourceMaps.write('.'))
+        .pipe(gulp.dest('./docs/assets/'));
 });
 
 gulp.task('js', function(){
