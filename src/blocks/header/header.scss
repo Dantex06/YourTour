@@ -31,6 +31,18 @@
     letter-spacing: -0.1px;
 
     color: var(--white);
+
+    &:hover {
+      border-bottom: 1px solid var(--white);
+    }
+
+    &_white:hover {
+      border-bottom: 1px solid var(--white);
+    }
+
+    &_black:hover {
+      border-bottom: 1px solid var(--black);
+    }
   }
 
   &_phone {

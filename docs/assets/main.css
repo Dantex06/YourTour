@@ -478,6 +478,9 @@
   letter-spacing: -0.1px;
   color: var(--white);
 }
+.header_nav-link:hover {
+  border-bottom: 1px solid var(--white);
+}
 .header_nav-link_white:hover {
   border-bottom: 1px solid var(--white);
 }
@@ -2040,6 +2043,9 @@ body, html {
   font-size: 20px;
   letter-spacing: -0.1px;
   color: var(--white);
+}
+.header_nav-link:hover {
+  border-bottom: 1px solid var(--white);
 }
 .header_nav-link_white:hover {
   border-bottom: 1px solid var(--white);
