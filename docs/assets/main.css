@@ -216,8 +216,8 @@
 .checkbox_mark {
   position: relative;
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   border: 2px solid var(--black);
   border-radius: 4px;
   background: transparent;
@@ -225,8 +225,8 @@
 .checkbox_mark::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 6px;
+  top: 4px;
+  left: 7px;
   width: 6px;
   height: 10px;
   border: solid #000;
@@ -413,6 +413,7 @@
 }
 .footer_info_links_item a:hover {
   text-decoration: underline;
+  cursor: pointer;
   text-underline-offset: 4px;
 }
 
@@ -490,6 +491,7 @@
 .header_phone {
   font-size: 20px;
   color: var(--white);
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -572,8 +574,8 @@
   border-radius: 50%;
 }
 .radio-btn_checkmark {
-  height: calc(100% - 6px);
-  width: calc(100% - 6px);
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
   border-radius: 50%;
   background-color: var(--black);
   display: none;
@@ -585,6 +587,9 @@
 .radio-btn input {
   display: none;
 }
+.radio-btn:hover {
+  cursor: pointer;
+}
 
 .radio-btn input[type=radio]:checked + .radio-btn_checkmark {
   display: inline-block;
@@ -594,6 +599,10 @@
   .radio-btn {
     width: 20px;
     height: 20px;
+  }
+  .radio-btn_checkmark {
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
   }
   .radio-btn_select {
     font-size: 16px;
@@ -711,7 +720,7 @@
   color: var(--white);
 }
 .story-cards_card_buttons_media a:hover {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 2px solid var(--white);
 }
 .story-cards_card_buttons_media a:active {
   color: var(--orange-200);
@@ -796,12 +805,13 @@
   letter-spacing: 0.2px;
   padding-bottom: 4px;
 }
+.tab_item_active {
+  color: var(--orange-200);
+  border-bottom: 2px solid var(--orange-200) !important;
+}
 .tab_item:hover {
   border-bottom: 2px solid var(--black-default);
-}
-.tab_item:active {
-  color: var(--orange-200);
-  border-bottom: 2px solid var(--orange-200);
+  cursor: pointer;
 }
 
 @media (max-width: 550px) {
@@ -972,13 +982,17 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, a, p, span, li {
+h1, h2, h3, h4, h5, h6, a, p, span, li, textarea {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
 body, html {
   height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -1074,6 +1088,7 @@ body, html {
   line-height: 32px;
 }
 .collect-tour_form_inputs_item_input {
+  resize: none;
   max-width: 100%;
   height: 152px;
 }
@@ -1218,20 +1233,22 @@ body, html {
   border-radius: 50px;
 }
 .cta_info {
+  height: 162px;
   max-width: 371px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 .cta_info_title {
   font-size: 35px;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 38px;
   color: var(--black);
 }
 .cta_info_description {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   color: var(--gray-300);
 }
 
@@ -1380,6 +1397,16 @@ body, html {
   height: 301px;
   width: 444px;
   border-radius: 50px;
+  z-index: 2;
+}
+.photos_images_item_mobile:nth-child(2) {
+  display: none;
+}
+.photos_images_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .photos_images_item-small {
   height: 301px;
@@ -1398,6 +1425,15 @@ body, html {
     height: 300px;
     width: 314px;
     object-fit: cover;
+  }
+  .photos_images_item_mobile:nth-child(2) {
+    display: block;
+  }
+  .photos_images_item_mobile:nth-child(1) {
+    display: none;
+  }
+  .photos_images_item img {
+    border-radius: 50px;
   }
   .photos_images .photos_images_item:nth-child(2),
   .photos_images .photos_images_item:nth-child(7),
@@ -1590,7 +1626,6 @@ body, html {
   }
 }
 .sections {
-  background: var(--beige-100);
   display: flex;
   flex-direction: column;
   row-gap: 135px;
@@ -1641,13 +1676,17 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, a, p, span, li {
+h1, h2, h3, h4, h5, h6, a, p, span, li, textarea {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
 body, html {
   height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -1782,8 +1821,8 @@ body, html {
 .checkbox_mark {
   position: relative;
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   border: 2px solid var(--black);
   border-radius: 4px;
   background: transparent;
@@ -1791,8 +1830,8 @@ body, html {
 .checkbox_mark::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 6px;
+  top: 4px;
+  left: 7px;
   width: 6px;
   height: 10px;
   border: solid #000;
@@ -1979,6 +2018,7 @@ body, html {
 }
 .footer_info_links_item a:hover {
   text-decoration: underline;
+  cursor: pointer;
   text-underline-offset: 4px;
 }
 
@@ -2056,6 +2096,7 @@ body, html {
 .header_phone {
   font-size: 20px;
   color: var(--white);
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -2138,8 +2179,8 @@ body, html {
   border-radius: 50%;
 }
 .radio-btn_checkmark {
-  height: calc(100% - 6px);
-  width: calc(100% - 6px);
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
   border-radius: 50%;
   background-color: var(--black);
   display: none;
@@ -2151,6 +2192,9 @@ body, html {
 .radio-btn input {
   display: none;
 }
+.radio-btn:hover {
+  cursor: pointer;
+}
 
 .radio-btn input[type=radio]:checked + .radio-btn_checkmark {
   display: inline-block;
@@ -2160,6 +2204,10 @@ body, html {
   .radio-btn {
     width: 20px;
     height: 20px;
+  }
+  .radio-btn_checkmark {
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
   }
   .radio-btn_select {
     font-size: 16px;
@@ -2277,7 +2325,7 @@ body, html {
   color: var(--white);
 }
 .story-cards_card_buttons_media a:hover {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 2px solid var(--white);
 }
 .story-cards_card_buttons_media a:active {
   color: var(--orange-200);
@@ -2362,12 +2410,13 @@ body, html {
   letter-spacing: 0.2px;
   padding-bottom: 4px;
 }
+.tab_item_active {
+  color: var(--orange-200);
+  border-bottom: 2px solid var(--orange-200) !important;
+}
 .tab_item:hover {
   border-bottom: 2px solid var(--black-default);
-}
-.tab_item:active {
-  color: var(--orange-200);
-  border-bottom: 2px solid var(--orange-200);
+  cursor: pointer;
 }
 
 @media (max-width: 550px) {
@@ -2570,6 +2619,7 @@ body, html {
   line-height: 32px;
 }
 .collect-tour_form_inputs_item_input {
+  resize: none;
   max-width: 100%;
   height: 152px;
 }
@@ -2714,20 +2764,22 @@ body, html {
   border-radius: 50px;
 }
 .cta_info {
+  height: 162px;
   max-width: 371px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 .cta_info_title {
   font-size: 35px;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 38px;
   color: var(--black);
 }
 .cta_info_description {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   color: var(--gray-300);
 }
 
@@ -2876,6 +2928,16 @@ body, html {
   height: 301px;
   width: 444px;
   border-radius: 50px;
+  z-index: 2;
+}
+.photos_images_item_mobile:nth-child(2) {
+  display: none;
+}
+.photos_images_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .photos_images_item-small {
   height: 301px;
@@ -2894,6 +2956,15 @@ body, html {
     height: 300px;
     width: 314px;
     object-fit: cover;
+  }
+  .photos_images_item_mobile:nth-child(2) {
+    display: block;
+  }
+  .photos_images_item_mobile:nth-child(1) {
+    display: none;
+  }
+  .photos_images_item img {
+    border-radius: 50px;
   }
   .photos_images .photos_images_item:nth-child(2),
   .photos_images .photos_images_item:nth-child(7),

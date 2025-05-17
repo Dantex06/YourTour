@@ -17,22 +17,24 @@
   }
 
   &_info {
+    height: 162px;
     max-width: 371px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
 
     &_title {
       font-size: 35px;
       font-weight: 500;
-      line-height: 44px;
+      line-height: 38px;
       color: var(--black)
     }
 
     &_description {
       font-size: 20px;
-      line-height: 25px;
+      line-height: 30px;
 
       color: var(--gray-300);
     }

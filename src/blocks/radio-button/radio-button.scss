@@ -8,8 +8,8 @@
   border-radius: 50%;
 
   &_checkmark {
-    height: calc(100% - 6px);
-    width: calc(100% - 6px);
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
     border-radius: 50%;
     background-color: var(--black);
     display: none;
@@ -23,6 +23,10 @@
   & input {
     display: none;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .radio-btn input[type="radio"]:checked + .radio-btn_checkmark {
@@ -33,6 +37,12 @@
   .radio-btn {
     width: 20px;
     height: 20px;
+
+    &_checkmark {
+      height: calc(100% - 8px);
+      width: calc(100% - 8px);
+    }
+
 
     &_select {
       font-size: 16px;

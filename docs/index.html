@@ -14,28 +14,28 @@
 
     <div class="header_info">
 
-    <img class="header_logo" src = "assets/icons/logo.svg" alt="Logo"/>
+    <a class="header_logo" href="#"><img src = "assets/icons/logo.svg" alt="Logo"/></a>
     <img class="header_logo-mobile" src="assets/icons/logo-mobile.svg" alt="logo">
     <nav class="header_nav">
         <ul class="header_nav-list">
             <li class="header_nav-item">
-                <a class="header_nav-link" href="#">Туры</a>
+                <a class="header_nav-link" href="#choose_tour">Туры</a>
             </li>
             <li class="header_nav-item">
-                <a class="header_nav-link" href="#">Создать тур</a>
+                <a class="header_nav-link" href="#collect_tour">Создать тур</a>
             </li>
             <li class="header_nav-item">
-                <a class="header_nav-link" href="#">Отзывы</a>
+                <a class="header_nav-link" href="#reviews">Отзывы</a>
             </li>
             <li class="header_nav-item">
-                <a class="header_nav-link" href="#">Истории</a>
+                <a class="header_nav-link" href="#stories">Истории</a>
             </li>
         </ul>
     </nav>
 
-    <p class="header_phone">
+    <a href="tel:+71234567890" class="header_phone">
         +7 999 999 99 99
-    </p>
+    </a>
 
     <script src="js/header.bundle.js"></script>
 
@@ -59,32 +59,32 @@
 
 </div>
 
-    <div class="chose-tour">
+    <div class="chose-tour" id="choose_tour">
 
     <div class="chose-tour_info">
         <div class="chose-tour_info_head">
         <h2 class="chose-tour_info_head_title">Выбери свой тур</h2>
         <ul class="tab">
     <li>
-        <a class="tab_item" href="#">Популярные</a>
+        <a class="tab_item tab_item_active">Популярные</a>
     </li>
     <li>
-        <a class="tab_item" href="#">Авторские</a>
+        <a class="tab_item">Авторские</a>
     </li>
     <li>
-        <a class="tab_item" href="#">Походы</a>
+        <a class="tab_item">Походы</a>
     </li>
     <li>
-        <a class="tab_item" href="#">Сплавы</a>
+        <a class="tab_item">Сплавы</a>
     </li>
     <li>
-        <a class="tab_item" href="#">Велопрогулки</a>
+        <a class="tab_item">Велопрогулки</a>
     </li>
 </ul>
         </div>
         <div class="tour-cards">
 
-    <a class="tour-cards_card" href="#">
+    <a class="tour-cards_card">
         <img class="tour-cards_card_background" src="assets/images/tour/tour-1.png" alt="Mountains">
         <div class="tour-cards_card_content">
             <div class="tour-cards_card_info">
@@ -98,7 +98,7 @@
         </div>
     </a>
 
-    <a class="tour-cards_card" href="#">
+    <a class="tour-cards_card">
         <img class="tour-cards_card_background" src="assets/images/tour/tour-2.png" alt="Sand">
         <div class="tour-cards_card_content">
             <div class="tour-cards_card_info">
@@ -112,7 +112,7 @@
         </div>
     </a>
 
-    <a class="tour-cards_card" href="#">
+    <a class="tour-cards_card">
         <img class="tour-cards_card_background" src="assets/images/tour/tour-3.png" alt="City">
         <div class="tour-cards_card_content">
             <div class="tour-cards_card_info">
@@ -126,7 +126,7 @@
         </div>
     </a>
 
-    <a class="tour-cards_card" href="#">
+    <a class="tour-cards_card">
         <img class="tour-cards_card_background" src="assets/images/tour/tour-4.png" alt="Town">
         <div class="tour-cards_card_content">
             <div class="tour-cards_card_info">
@@ -140,7 +140,7 @@
         </div>
     </a>
 
-    <a class="tour-cards_card" href="#">
+    <a class="tour-cards_card">
         <img class="tour-cards_card_background" src="assets/images/tour/tour-5.png" alt="Beach">
         <div class="tour-cards_card_content">
             <div class="tour-cards_card_info">
@@ -154,7 +154,7 @@
         </div>
     </a>
 
-    <a class="tour-cards_card" href="#">
+    <a class="tour-cards_card">
         <img class="tour-cards_card_background" src="assets/images/tour/tour-6.png" alt="Lake">
         <div class="tour-cards_card_content">
             <div class="tour-cards_card_info">
@@ -173,7 +173,7 @@
 
 </div>
 
-    <div class="collect-tour">
+    <div class="collect-tour" id="collect_tour">
 
     <div class="collect-tour_info">
         <h2 class="collect-tour_info_title">Собери свой тур</h2>
@@ -222,7 +222,7 @@
             </div>
             <div class="collect-tour_form_inputs_item">
                 <p class="collect-tour_form_inputs_item_title">Комментарий</p>
-                <input type="text" name="comment" class="input collect-tour_form_inputs_item_input input-mobile">
+                <textarea type="text" name="comment" class="input collect-tour_form_inputs_item_input input-mobile"></textarea>
             </div>
         </div>
         <div class="collect-tour_form_age">
@@ -266,7 +266,7 @@
 
 </div>
 
-    <div class="reviews">
+    <div class="reviews" id="reviews">
     <div class="reviews_info">
     <h2 class="reviews_info_title">Отзывы наших путешественников</h2>
     <p class="reviews_info_description">Идейные соображения высшего порядка,
@@ -317,19 +317,58 @@
     </div>
 
     <div class="photos_images">
-        <img class="photos_images_item" src="assets/images/travel/travel-1.png" alt="plane">
-        <img class="photos_images_item" src="assets/images/travel/travel-2.png" alt="sand">
-        <img class="photos_images_item" src="assets/images/travel/travel-3.png" alt="mountains">
-        <img class="photos_images_item" src="assets/images/travel/travel-4.png" alt="road">
-        <img class="photos_images_item photos_images_item-small" src="assets/images/travel/travel-5.png" alt="sea">
-        <img class="photos_images_item photos_images_item-small" src="assets/images/travel/travel-6.png" alt="map">
-        <img class="photos_images_item photos_images_item-small" src="assets/images/travel/travel-7.png" alt="bridge">
-        <img class="photos_images_item photos_images_item-small" src="assets/images/travel/travel-8.png" alt="camp">
-        <img class="photos_images_item photos_images_item-small" src="assets/images/travel/travel-13.png" alt="river">
-        <img class="photos_images_item" src="assets/images/travel/travel-9.png" alt="town">
-        <img class="photos_images_item" src="assets/images/travel/travel-10.png" alt="village">
-        <img class="photos_images_item" src="assets/images/travel/travel-11.png" alt="lake">
-        <img class="photos_images_item" src="assets/images/travel/travel-12.png" alt="city">
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-1.png" alt="plane">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-2.png" alt="sand">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-3.png" alt="mountains">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-4.png" alt="road">
+        </div>
+        <div class="photos_images_item photos_images_item-small">
+            <img  src="assets/images/travel/travel-5.png" alt="sea">
+        </div>
+        <div class="photos_images_item photos_images_item-small">
+            <img src="assets/images/travel/travel-6.png" alt="map">
+        </div>
+        <div class="photos_images_item photos_images_item-small">
+            <img src="assets/images/travel/travel-7.png" alt="bridge">
+        </div>
+        <div class="photos_images_item photos_images_item-small">
+            <img src="assets/images/travel/travel-8.png" class="photos_images_item_mobile" alt="camp">
+            <img src="assets/images/travel/travel-8-mobile.png" class="photos_images_item_mobile" alt="camp">
+        </div>
+        <div class="photos_images_item photos_images_item-small">
+            <img src="assets/images/travel/travel-13.png" class="photos_images_item_mobile" alt="river">
+            <img src="assets/images/travel/travel-13-mobile.png" class="photos_images_item_mobile" alt="river">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-9.png" alt="town">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-10.png" alt="village">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-11.png" alt="lake">
+        </div>
+        <div class="photos_images_item">
+            <img src="assets/images/travel/travel-12.png" alt="city">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 
@@ -337,7 +376,7 @@
 
 </div>
 
-    <div class="stories">
+    <div class="stories" id="stories">
     <div class="stories_info">
         <h2 class="stories_info_title">Истории путешествий</h2>
         <p class="stories_info_description">Идейные соображения высшего порядка,
@@ -357,14 +396,14 @@
                     </ul>
                 </div>
                 <div class="story-cards_card_buttons">
-                    <a class="button_detailed story-cards_card_buttons_link" href="#">
+                    <a class="button_detailed story-cards_card_buttons_link">
                         <span class="button_detailed_item">Подробнее</span>
                         <img src="assets/icons/arrow-right.svg" alt="Arrow">
                     </a>
                     <div class="story-cards_card_buttons_media">
-                        <a href="#">telegram</a>
-                        <a href="#">facebook</a>
-                        <a href="#">YouTube</a>
+                        <a>telegram</a>
+                        <a>facebook</a>
+                        <a>YouTube</a>
                     </div>
                 </div>
 
@@ -379,14 +418,14 @@
                     <p class="story-cards_card_info_description">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
                 </div>
                 <div class="story-cards_card_buttons">
-                    <a class="button_detailed story-cards_card_buttons_link" href="#">
+                    <a class="button_detailed story-cards_card_buttons_link">
                         <span class="button_detailed_item">Подробнее</span>
                         <img src="assets/icons/arrow-right.svg" alt="Arrow">
                     </a>
                     <div class="story-cards_card_buttons_media">
-                        <a href="#">telegram</a>
-                        <a href="#">facebook</a>
-                        <a href="#">ВКонтакте</a>
+                        <a>telegram</a>
+                        <a>facebook</a>
+                        <a>ВКонтакте</a>
                     </div>
                 </div>
 
@@ -401,14 +440,14 @@
                     <p class="story-cards_card_info_description">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:</p>
                 </div>
                 <div class="story-cards_card_buttons">
-                    <a class="button_detailed story-cards_card_buttons_link" href="#">
+                    <a class="button_detailed story-cards_card_buttons_link">
                         <span class="button_detailed_item">Подробнее</span>
                         <img src="assets/icons/arrow-right.svg" alt="Arrow">
                     </a>
                     <div class="story-cards_card_buttons_media">
-                        <a href="#">telegram</a>
-                        <a href="#">facebook</a>
-                        <a href="#">ВКонтакте</a>
+                        <a>telegram</a>
+                        <a>facebook</a>
+                        <a>ВКонтакте</a>
                     </div>
                 </div>
 
@@ -425,7 +464,7 @@
             Пора в путешествие вместе с нами!
         </h2>
         <p class="cta_info_description">
-            Напиши на почту и узнай подробности на <a class="button_email" href="#">yourtour@gmail.com</a>
+            Напиши на почту и узнай подробности на <a class="button_email" href="mailto:yourtour@gmail.com">yourtour@gmail.com</a>
         </p>
     </div>
 
@@ -441,15 +480,15 @@
     <div class="footer_info_links">
         <div class="footer_info_links_item">
             <img src="assets/icons/telegram.svg" alt="telegram">
-            <a href="#">telegram</a>
+            <a>telegram</a>
         </div>
         <div class="footer_info_links_item">
             <img src="assets/icons/facebook.svg" alt="facebook">
-            <a href="#">facebook</a>
+            <a>facebook</a>
         </div>
         <div class="footer_info_links_item">
             <img src="assets/icons/vk.svg" alt="vkontakte">
-            <a href="#">vkontakte</a>
+            <a>vkontakte</a>
         </div>
     </div>
 

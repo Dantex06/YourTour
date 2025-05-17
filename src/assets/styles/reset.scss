@@ -17,13 +17,17 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, a, p, span, li {
+h1, h2, h3, h4, h5, h6, a, p, span, li, textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
 body, html{
     height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

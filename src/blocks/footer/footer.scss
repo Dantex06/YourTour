@@ -38,6 +38,7 @@
 
           &:hover {
             text-decoration: underline;
+            cursor: pointer;
             text-underline-offset: 4px;
           }
         }
@@ -80,7 +81,7 @@
       &_links {
 
         &_item {
-          gap: 6px
+          gap: 6px;
         }
 
         &_item a {

@@ -6,13 +6,9 @@ window.addEventListener("scroll", () => {
     header.style.position = isScrolled ? 'fixed' : 'absolute';
     header.style.backdropFilter = isScrolled ? 'blur(10px)' : 'none';
 
-    document.querySelector('.header_logo').src = isScrolled
-        ? 'assets/icons/logo-dark.svg'
-        : 'assets/icons/logo.svg';
-
-    document.querySelector('.header_logo-mobile').src = isScrolled
-        ? 'assets/icons/logo-mobile-dark.svg'
-        : 'assets/icons/logo-mobile.svg';
+    document.querySelectorAll('.header_logo, .header_logo-mobile').forEach(el => {
+        el.style.filter = isScrolled ? 'brightness(0)' : 'brightness(1)';
+    });
 
     document.querySelectorAll('.header_nav-link, .header_phone').forEach(el => {
         el.style.color = isScrolled ? 'var(--black)' : 'var(--white)';

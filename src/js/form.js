@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const ageRadios = form.querySelectorAll('input[name="age"]');
     const licenseCheckbox = form.querySelector('input[name="license"]');
     const phoneInput = form.querySelector('input[name="phone"]');
+    const emailInput = form.querySelector('input[name="email"]');
 
     ageRadios.forEach((radio, index) => {
         radio.value = index === 0 ? 'yes' : 'no';
@@ -24,6 +25,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const match = numbers.substring(1).match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
         this.value = `+7 (${match[1]}${match[1]?.length === 3 ? ') ' : ''}${match[2]}${match[2]?.length === 3 ? '-' : ''}${match[3]}${match[3]?.length === 2 ? '-' : ''}${match[4]}`;
     });
+
+    function parseDate(str) {
+        const [year, month, day] = str.split('-');
+        if (!day || !month || !year) return null;
+        if (year.length !== 4) return null;
+
+        const date = new Date(`${year}-${month}-${day}`);
+        if (isNaN(date)) return null;
+        return date;
+    }
+
+    function isDateInPast(date) {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        return date < today;
+    }
 
     findTourBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -50,10 +67,46 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        // Валидация email
+        const emailValue = emailInput.value.trim();
+        if (!emailValue) {
+            alert('Пожалуйста, введите ваш email');
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailValue)) {
+            alert('Пожалуйста, введите корректный email (например, example@mail.com)');
+            return;
+        }
+
+        const dateFromInput = form.querySelector('input[name="date from"]');
+        const dateToInput = form.querySelector('input[name="date to"]');
+
+        const dateFrom = parseDate(dateFromInput.value);
+        const dateTo = parseDate(dateToInput.value);
+        console.log(dateFrom, dateTo)
+
+        if (!dateFrom || !dateTo) {
+            alert('Пожалуйста, укажите корректные даты в формате ДД.ММ.ГГГГ');
+            return;
+        }
+
+        if (isDateInPast(dateFrom)) {
+            alert('Дата "от" не может быть раньше сегодняшнего дня');
+            return;
+        }
+
+        if (dateTo < dateFrom) {
+            alert('Дата "до" не может быть раньше даты "от"');
+            return;
+        }
+
         const formData = new FormData(form);
         const formValues = Object.fromEntries(formData.entries());
 
         console.log('Данные формы:', formValues);
+        document.location.href = '#choose_tour'
     });
 
     resetBtn.addEventListener('click', function(e) {
