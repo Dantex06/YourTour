@@ -14,6 +14,8 @@
       color: var(--orange-200);
 
       border-bottom: 2px solid var(--orange-200) !important;
+
+      padding-bottom: 4px;
     }
   }
 
@@ -34,6 +36,10 @@
     &_item {
       font-size: 16px;
       line-height: 22px;
+
+      &_active {
+        padding-bottom: 0;
+      }
     }
   }
 }

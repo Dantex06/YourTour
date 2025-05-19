@@ -811,6 +811,7 @@
 .tab_item_active {
   color: var(--orange-200);
   border-bottom: 2px solid var(--orange-200) !important;
+  padding-bottom: 4px;
 }
 .tab_item:hover {
   border-bottom: 2px solid var(--black-default);
@@ -826,6 +827,9 @@
   .tab_item {
     font-size: 16px;
     line-height: 22px;
+  }
+  .tab_item_active {
+    padding-bottom: 0;
   }
 }
 .tour-cards {
@@ -2437,6 +2441,7 @@ html {
 .tab_item_active {
   color: var(--orange-200);
   border-bottom: 2px solid var(--orange-200) !important;
+  padding-bottom: 4px;
 }
 .tab_item:hover {
   border-bottom: 2px solid var(--black-default);
@@ -2452,6 +2457,9 @@ html {
   .tab_item {
     font-size: 16px;
     line-height: 22px;
+  }
+  .tab_item_active {
+    padding-bottom: 0;
   }
 }
 .tour-cards {
