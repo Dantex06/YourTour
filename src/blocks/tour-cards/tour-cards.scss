@@ -147,6 +147,12 @@
           left: 4px;
         }
       }
+
+      &:hover {
+        .button_detailed {
+          background: transparent;
+        }
+      }
     }
   }
 

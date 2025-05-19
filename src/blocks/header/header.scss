@@ -33,21 +33,21 @@
     color: var(--white);
 
     &:hover {
-      border-bottom: 1px solid var(--white);
+      border-bottom: 2px solid var(--white);
     }
 
     &_white:hover {
-      border-bottom: 1px solid var(--white);
+      border-bottom: 2px solid var(--white);
     }
 
     &_black:hover {
-      border-bottom: 1px solid var(--black);
+      border-bottom: 2px solid var(--black);
     }
   }
 
   &_phone {
     font-size: 20px;
-
+    border-bottom: 2px solid transparent;
     color: var(--white);
 
     cursor: pointer;

@@ -4,13 +4,13 @@
   color: var(--black);
 
   &:hover {
-    border-bottom: 1px solid var(--black);
+    border-bottom: 2px solid var(--black);
   }
 
   &:active {
     color: var(--green-400);
 
-    border-bottom: 1px solid var(--green-400);
+    border-bottom: 2px solid var(--green-400);
   }
 }
 
