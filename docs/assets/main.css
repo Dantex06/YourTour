@@ -625,8 +625,12 @@
   position: relative;
   border-radius: 50px;
   overflow: hidden;
+  display: block;
   transition: transform 300ms ease;
   transform: scale(1);
+}
+.story-cards_card:active {
+  background: red;
 }
 .story-cards_card::before {
   content: "";
@@ -739,6 +743,9 @@
 }
 .story-cards_card:hover .button_detailed {
   background: var(--green-400);
+}
+.story-cards_card:active .button_detailed {
+  background: var(--orange-200);
 }
 
 @media (max-width: 1024px) {
@@ -2255,8 +2262,12 @@ html {
   position: relative;
   border-radius: 50px;
   overflow: hidden;
+  display: block;
   transition: transform 300ms ease;
   transform: scale(1);
+}
+.story-cards_card:active {
+  background: red;
 }
 .story-cards_card::before {
   content: "";
@@ -2369,6 +2380,9 @@ html {
 }
 .story-cards_card:hover .button_detailed {
   background: var(--green-400);
+}
+.story-cards_card:active .button_detailed {
+  background: var(--orange-200);
 }
 
 @media (max-width: 1024px) {

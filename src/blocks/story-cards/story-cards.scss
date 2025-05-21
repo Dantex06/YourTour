@@ -11,6 +11,9 @@
   margin: 0 auto;
 
   &_card {
+    &:active {
+      background: red;
+    }
     height: 567px;
     width: 100%;
     max-width: 1170px;
@@ -19,7 +22,7 @@
 
     border-radius: 50px;
     overflow: hidden;
-
+    display: block;
     transition: transform 300ms ease;
     transform: scale(1);
 
@@ -164,6 +167,12 @@
 
       .button_detailed {
         background: var(--green-400);
+      }
+    }
+
+    &:active {
+      .button_detailed {
+        background: var(--orange-200);
       }
     }
   }
