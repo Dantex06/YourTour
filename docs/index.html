@@ -15,7 +15,9 @@
     <div class="header_info">
 
     <a class="header_logo" href="#"><img src = "assets/icons/logo.svg" alt="Logo"/></a>
-    <img class="header_logo-mobile" src="assets/icons/logo-mobile.svg" alt="logo">
+    <a class="header_logo-mobile" href="#">
+        <img class="header_logo-mobile" src="assets/icons/logo-mobile.svg" alt="logo">
+    </a>
     <nav class="header_nav">
         <ul class="header_nav-list">
             <li class="header_nav-item">
@@ -45,7 +47,7 @@
 
   <main class="sections">
 
-    <div class="hero">
+    <section class="hero">
 
     <div class="hero_info">
 
@@ -57,9 +59,9 @@
 
     </div>
 
-</div>
+</section>
 
-    <div class="chose-tour" id="choose_tour">
+    <section class="chose-tour" id="choose_tour">
 
     <div class="chose-tour_info">
         <div class="chose-tour_info_head">
@@ -171,9 +173,9 @@
 </div>
     </div>
 
-</div>
+</section>
 
-    <div class="collect-tour" id="collect_tour">
+    <section class="collect-tour" id="collect_tour">
 
     <div class="collect-tour_info">
         <h2 class="collect-tour_info_title">Собери свой тур</h2>
@@ -246,8 +248,12 @@
 
         <div class="collect-tour_form_license">
             <label class="checkbox">
-                <input type="checkbox" name="license" class="checkbox_input" >
-                <span class="checkbox_mark"></span>
+                <input type="checkbox" name="license" class="checkbox_input">
+                <span class="checkbox_mark">
+                    <svg viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 4.5L4.5 8L11 1" />
+                    </svg>
+                </span>
             </label>
             <p class="collect-tour_form_license_text">
                 Нажимая кнопку, я принимаю условия
@@ -264,9 +270,9 @@
 
     <script src="js/form.bundle.js"></script>
 
-</div>
+</section>
 
-    <div class="reviews" id="reviews">
+    <section class="reviews" id="reviews">
     <div class="reviews_info">
     <h2 class="reviews_info_title">Отзывы наших путешественников</h2>
     <p class="reviews_info_description">Идейные соображения высшего порядка,
@@ -304,11 +310,9 @@
             </div>
         </div>
     </div>
+</section>
 
-
-</div>
-
-    <div class="photos">
+    <section class="photos">
 
     <div class="photos_info">
         <h2 class="photos_info_title">Фотографии путешествий</h2>
@@ -364,29 +368,10 @@
                 <img src="assets/images/travel/travel-12.png" alt="city">
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+</section>
 
-
-
-</div>
-
-    <div class="stories" id="stories">
+    <section class="stories" id="stories">
     <div class="stories_info">
         <h2 class="stories_info_title">Истории путешествий</h2>
         <p class="stories_info_description">Идейные соображения высшего порядка,
@@ -463,11 +448,10 @@
 
             </div>
         </div>
-
     </div>
-</div>
+</section>
 
-    <div class="cta">
+    <section class="cta">
     <div class="cta_image"></div>
     <div class="cta_info">
         <h2 class="cta_info_title">
@@ -478,7 +462,7 @@
         </p>
     </div>
 
-</div>
+</section>
 
   </main>
 

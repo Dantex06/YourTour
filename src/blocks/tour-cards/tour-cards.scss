@@ -1,3 +1,5 @@
+@import "../../assets/styles/fonts";
+
 .tour-cards {
   max-width: 1170px;
 
@@ -63,15 +65,16 @@
     &_info {
       display: flex;
       flex-direction: column;
-      row-gap: 19px;
+      row-gap: 16px;
 
       &_title {
+        @include h3;
         font-size: 35px;
         font-weight: 500;
       }
 
       &_description {
-        font-size: 17px;
+        @include p-small;
       }
 
       &_link {

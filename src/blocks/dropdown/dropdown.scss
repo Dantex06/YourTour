@@ -1,3 +1,5 @@
+@import "../../assets/styles/fonts";
+
 .dropdown {
   position: relative;
   height: 105px;
@@ -8,9 +10,8 @@
   row-gap: 5px;
 
   &_title {
-    font-size: 20px;
+    @include p-normal;
     color: var(--black);
-    line-height: 35px;
   }
 
   &__container {

@@ -1,3 +1,5 @@
+@import "../../assets/styles/fonts";
+
 .cta {
   display: flex;
   align-items: center;
@@ -26,16 +28,11 @@
     gap: 20px;
 
     &_title {
-      font-size: 35px;
-      font-weight: 500;
-      line-height: 38px;
+      @include h3;
       color: var(--black)
     }
 
     &_description {
-      font-size: 20px;
-      line-height: 30px;
-
       color: var(--gray-300);
     }
   }
@@ -61,7 +58,7 @@
 
 @media (max-width: 550px) {
   .cta {
-    padding-bottom: 76px;
+    padding-bottom: 34px;
 
     &_image {
       width: 130px;
@@ -71,6 +68,7 @@
     }
 
     &_info {
+      justify-content: start;
       &_title {
         max-width: 291px;
 

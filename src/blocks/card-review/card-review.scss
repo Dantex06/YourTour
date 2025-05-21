@@ -1,3 +1,5 @@
+@import "../../assets/styles/fonts";
+
 .card-review {
   height: 673px;
   max-width: 570px;
@@ -12,12 +14,7 @@
   padding: 40px;
 
   &_info {
-    max-width: 490px;
-
-    font-size: 23px;
-    font-weight: 700;
-    letter-spacing: -0.04px;
-    line-height: 28px;
+    @include p-big;
     color: var(--black-default);
   }
 
@@ -35,18 +32,13 @@
       row-gap: 8px;
 
       &_name-author {
-        font-size: 35px;
-        font-weight: 500;
-        line-height: 51px;
+        @include h3;
 
         color: var(--black-default);
       }
 
       &_title {
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: -0.2px;
+        @include p-small;
 
         color: var(--gray-300);
       }

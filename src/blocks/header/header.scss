@@ -10,6 +10,10 @@
     display: none;
   }
 
+  &_logo {
+    display: contents;
+  }
+
   &_info {
     height: 100%;
     max-width: 1168px;
@@ -28,7 +32,6 @@
 
   &_nav-link {
     font-size: 20px;
-    letter-spacing: -0.1px;
 
     color: var(--white);
 
@@ -47,7 +50,6 @@
 
   &_phone {
     font-size: 20px;
-    border-bottom: 2px solid transparent;
     color: var(--white);
 
     cursor: pointer;
