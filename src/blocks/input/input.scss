@@ -2,21 +2,18 @@
   height: 68px;
   max-width: 500px;
 
-  background: var(--beige-100);
-  border: 1px solid var(--beige-200);
-  border-radius: 10px;
-  font-weight: 400;
-
   font-size: 20px;
+  font-weight: 400;
 
   color: var(--black);
 
+  background: var(--beige-100);
+  border: 1px solid var(--beige-200);
+  border-radius: 10px;
+
   padding: 20px;
 
-  &::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-    color: var(--gray-300);
-  }
+
 
   &[type='tel'] {
     letter-spacing: -1px;
@@ -28,12 +25,13 @@
 
   &:hover {
     cursor: pointer;
+
     background: var(--beige-200);
   }
 
   &:focus {
-    border: 1px solid var(--gray-300);
     background: var(--beige-200);
+    border: 1px solid var(--gray-300);
     outline: none;
   }
 }

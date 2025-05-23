@@ -10,8 +10,8 @@
     max-width: 1168px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     margin: 0 auto;
 
@@ -78,8 +78,8 @@
   .footer {
     &_info {
       row-gap: 12px;
-      &_links {
 
+      &_links {
         &_item {
           gap: 6px;
         }
@@ -89,8 +89,8 @@
         }
 
         &_item img {
-          height: 21px;
           width: 21px;
+          height: 21px;
         }
       }
     }

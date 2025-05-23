@@ -1,6 +1,6 @@
-@import 'blocks/**/*.scss';
-@import 'assets/**/*.scss';
-@import "sections/**/*.scss";
+@import 'blocks/**/*';
+@import 'assets/**/*';
+@import "sections/**/*";
 
 .sections {
   display: flex;

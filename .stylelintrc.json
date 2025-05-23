@@ -1,0 +1,80 @@
+{ "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+  "media-feature-range-notation": "prefix",
+  "selector-class-pattern": null,
+  "no-descending-specificity": null,
+  "declaration-empty-line-before": ["always", {
+    "except": ["first-nested"],
+    "ignore": ["after-declaration"]
+  }],
+
+  "order/order": [
+    "custom-properties",
+    "declarations"
+  ],
+  "order/properties-order": [
+    {
+      "emptyLineBefore": "always",
+      "properties": [
+        "width",
+        "height",
+        "max-width",
+        "max-height",
+        "min-width",
+        "min-height"
+      ]
+    },
+    {
+      "emptyLineBefore": "always",
+      "properties": [
+        "position",
+        "display",
+        "align-items",
+        "justify-content",
+        "flex-direction",
+        "flex-wrap",
+        "gap",
+        "row-gap"
+      ]
+    },
+    {
+      "emptyLineBefore": "always",
+      "properties": [
+        "font-size",
+        "font-weight",
+        "line-height",
+        "text-align",
+        "letter-spacing",
+        "color"
+      ]
+    },
+    {
+      "emptyLineBefore": "always",
+      "properties": [
+        "background",
+        "background-image",
+        "background-size",
+        "background-position",
+        "background-repeat",
+        "border",
+        "border-radius"
+      ]
+    },
+    {
+      "emptyLineBefore": "always",
+      "properties": [
+        "margin",
+        "padding",
+        "margin-top",
+        "margin-bottom",
+        "margin-right",
+        "margin-left",
+        "padding-top",
+        "padding-bottom",
+        "padding-right",
+        "padding-left"
+      ]
+    }
+  ]
+} }

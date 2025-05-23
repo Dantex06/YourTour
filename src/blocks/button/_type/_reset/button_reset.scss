@@ -1,16 +1,18 @@
 .button_reset {
-  height: 58px;
   width: 235px;
+  height: 58px;
 
   font-size: 20px;
   color: var(--green-400);
 
-  border-radius: 10px;
-  padding: 7px 20px;
   background: var(--green-100);
+  border-radius: 10px;
+
+  padding: 7px 20px;
 
   &:hover {
     cursor: pointer;
+
     background: var(--gray-100);
   }
 
@@ -21,8 +23,8 @@
 
 @media (max-width: 550px) {
   .button_reset {
-    height: 47px;
     width: 134px;
+    height: 47px;
 
     font-size: 16px;
   }

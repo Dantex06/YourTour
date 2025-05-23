@@ -1,15 +1,17 @@
 .button_detailed {
-  height: 42px;
   width: 199px;
+  height: 42px;
 
   position: absolute;
-  color: white;
 
   display: flex;
   align-items: center;
   gap: 15px;
 
+  color: white;
+
   border-radius: 50px;
+
   padding: 7px 20px;
 
   &_item {

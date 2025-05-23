@@ -2,9 +2,9 @@
   height: 831px;
 
   background-image: url('../../assets/images/header/header-img.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 
 
   &_info {
@@ -20,23 +20,25 @@
   }
 
   &_title {
-    color: var(--white);
     font-size: 96px;
     font-weight: 700;
     line-height: 105px;
+    text-align: center;
     letter-spacing: 1.8px;
 
-    text-align: center;
+    color: var(--white);
   }
 
   &_description {
     max-width: 562px;
+
     font-size: 20px;
     line-height: 28px;
 
+    text-align: center;
+
     color: var(--white);
 
-    text-align: center;
     margin: 0 auto;
   }
 
@@ -64,12 +66,13 @@
 
       padding: 140px 0 100px;
     }
+
     &_title {
       max-width: 230px;
 
       font-size: 34px;
-      letter-spacing: 0.5px;
       line-height: 38px;
+      letter-spacing: 0.5px;
 
       margin: 0 auto;
     }

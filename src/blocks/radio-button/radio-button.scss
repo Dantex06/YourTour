@@ -1,18 +1,22 @@
 .radio-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 26px;
   width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 2px solid var(--black);
   border-radius: 50%;
 
   &_checkmark {
-    height: calc(100% - 10px);
     width: calc(100% - 10px);
+    height: calc(100% - 10px);
+
+    display: none;
+
     border-radius: 50%;
     background-color: var(--black);
-    display: none;
   }
 
   &_select {
@@ -39,8 +43,8 @@
     height: 20px;
 
     &_checkmark {
-      height: calc(100% - 8px);
       width: calc(100% - 8px);
+      height: calc(100% - 8px);
     }
 
 

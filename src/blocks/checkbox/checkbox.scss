@@ -1,15 +1,16 @@
 .checkbox {
+  position: relative;
   display: flex;
   align-items: flex-start;
-  cursor: pointer;
-  position: relative;
   gap: 10px;
+  cursor: pointer;
 
   &_input {
-    position: absolute;
-    opacity: 0;
     width: 0;
     height: 0;
+
+    position: absolute;
+    opacity: 0;
 
     &:checked + .checkbox_mark {
       border-color: #000;
@@ -21,24 +22,28 @@
   }
 
   &_mark {
-    position: relative;
-    display: inline-block;
     width: 26px;
     height: 26px;
+
+    position: relative;
+    display: inline-block;
+
+    background: transparent;
     border: 2px solid var(--black);
     border-radius: 4px;
-    background: transparent;
 
     &::before {
-      content: '';
-      position: absolute;
-      top: 4px;
-      left: 7px;
       width: 6px;
       height: 10px;
+
+      position: absolute;
+
       border: solid #000;
-      border-width: 0 2px 2px 0;
       border-radius: 1px;
+      content: '';
+      top: 4px;
+      left: 7px;
+      border-width: 0 2px 2px 0;
       transform: rotate(45deg);
       opacity: 0;
     }
@@ -48,8 +53,8 @@
 @media (max-width: 550px) {
   .checkbox {
     &_mark {
-      height: 20px;
       width: 20px;
+      height: 20px;
     }
 
     ::before {

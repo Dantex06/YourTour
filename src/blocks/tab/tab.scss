@@ -1,8 +1,8 @@
 .tab {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 
   margin-top: 37px;
 
@@ -31,8 +31,10 @@
   .tab {
     gap: 10px;
 
-    margin-top: 29px;
     padding: 0 20px;
+
+    margin-top: 29px;
+
     &_item {
       font-size: 16px;
       line-height: 22px;
