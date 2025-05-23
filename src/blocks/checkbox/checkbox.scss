@@ -1,9 +1,9 @@
 .checkbox {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
+
+  gap: 8px;
 
   &_input {
     width: 0;
@@ -15,8 +15,9 @@
     &:checked + .checkbox_mark {
       border-color: #000;
 
-      &::before {
+      svg {
         opacity: 1;
+        transform: scale(1);
       }
     }
   }
@@ -25,41 +26,28 @@
     width: 26px;
     height: 26px;
 
-    position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background: transparent;
-    border: 2px solid var(--black);
+    border: 2px solid #000;
     border-radius: 4px;
+    transition: all 0.2s ease;
 
-    &::before {
-      width: 6px;
-      height: 10px;
-
-      position: absolute;
-
-      border: solid #000;
-      border-radius: 1px;
-      content: '';
-      top: 4px;
-      left: 7px;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
+    svg {
+      width: 12px;
+      height: 9px;
       opacity: 0;
-    }
-  }
-}
+      transform: scale(0.8);
+      transition: all 0.2s ease;
 
-@media (max-width: 550px) {
-  .checkbox {
-    &_mark {
-      width: 20px;
-      height: 20px;
-    }
-
-    ::before {
-      top: 1px;
-      left: 4px;
+      path {
+        stroke: #000;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+@import "../../assets/styles/fonts";
+
 .hero {
   height: 831px;
 
@@ -20,20 +22,14 @@
   }
 
   &_title {
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 105px;
     text-align: center;
-    letter-spacing: 1.8px;
-
     color: var(--white);
+
+    @include h1;
   }
 
   &_description {
     max-width: 562px;
-
-    font-size: 20px;
-    line-height: 28px;
 
     text-align: center;
 

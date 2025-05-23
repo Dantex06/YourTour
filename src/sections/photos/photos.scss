@@ -1,3 +1,5 @@
+@import "../../assets/styles/fonts";
+
 .photos {
   display: flex;
   align-items: center;
@@ -11,10 +13,8 @@
     gap: 30px;
 
     &_title {
-      max-width: 732px;
+      @include h2;
 
-      font-size: 59px;
-      font-weight: bold;
       text-align: center;
 
       color: var(--black);
@@ -23,8 +23,6 @@
     &_description {
       max-width: 410px;
 
-      font-size: 20px;
-      line-height: 27px;
       text-align: center;
 
       color: var(--gray-300);
@@ -78,8 +76,6 @@
 
 @media (max-width: 1024px) {
   .photos {
-    gap: 104px;
-
     &_images {
       gap: 30px 20px;
 
@@ -181,17 +177,6 @@
       row-gap: 20px;
 
       padding: 0 21px;
-
-      &_title {
-        font-size: 34px;
-        line-height: 40px;
-        letter-spacing: 0.2px;
-      }
-
-      &_description {
-        font-size: 16px;
-        line-height: 22px;
-      }
     }
   }
 }

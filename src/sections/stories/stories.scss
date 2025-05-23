@@ -1,9 +1,11 @@
+@import "../../assets/styles/fonts";
+
 .stories {
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  row-gap: 96px;
+  row-gap: 100px;
 
   &_info {
     width: 100%;
@@ -12,25 +14,20 @@
     align-items: center;
     flex-direction: column;
 
-    row-gap: 32px;
+    row-gap: 30px;
 
     &_title {
-      font-size: 59px;
-      font-weight: 700;
+      @include h2;
 
       text-align: center;
+
       color: var(--black);
     }
 
     &_description {
       width: 410px;
 
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 33px;
-
       text-align: center;
-      letter-spacing: 0.1px;
 
       color: var(--gray-300);
     }
@@ -48,7 +45,7 @@
 
 @media (max-width: 1024px) {
   .stories {
-    row-gap: 98px;
+    row-gap: 97px;
 
     &_info {
       &_description {
@@ -68,7 +65,7 @@
     row-gap: 50px;
 
     &_info {
-      row-gap: 20px;
+      row-gap: 24px;
 
       &_title {
         width: 100%;
